@@ -10,8 +10,8 @@ type ButtonsProps = {
 }
 
 const VARIANT_CLASSES = {
-    primary: 'bg-blue-500 text-white hover:bg-blue-600',
-    secondary: 'bg-gray-500 text-white hover:bg-gray-600',
+    primary: 'bg-yellow-500 text-white hover:bg-yellow-600',
+    secondary: 'transparent border border-white text-white',
 };
 
 const Buttons: React.FC<ButtonsProps> = ({ title, onClick, variant = 'primary', loading = false, className = '', type = 'button' }) => {
