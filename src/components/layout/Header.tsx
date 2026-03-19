@@ -12,7 +12,7 @@ export default function Header() {
 
   return (
     <div className="sticky top-0 left-0 z-50 w-full bg-white/30 dark:bg-black/30 backdrop-blur-md border-b border-white/20 shadow-sm">
-      <div className="container mx-auto flex items-center justify-between px-4 sm:px-6 md:px-8 py-3 sm:py-4">
+      <div className="container mx-auto flex items-center justify-between px-4  py-3 sm:py-4">
        {/* Logo */}
        <div className='flex justify-center items-center gap-1 md:gap-2'>
         <img src="/logo.jpg" alt="Logo" className='w-10 h-8 sm:w-12 sm:h-10' />

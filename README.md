@@ -2,6 +2,12 @@
 
 A modern, responsive fitness center website built with Next.js, React, TypeScript, and Tailwind CSS.
 
+## 🔗 Live Demo
+
+**[View Live Application](https://fitness-center-mu.vercel.app/)**
+
+Visit the live deployment: https://fitness-center-mu.vercel.app/
+
 ## Features
 
 - 🎨 **Responsive Design** - Mobile-first approach with breakpoints for all screen sizes
@@ -10,6 +16,17 @@ A modern, responsive fitness center website built with Next.js, React, TypeScrip
 - 📝 **Contact Form** - Form validation with error handling
 - ⚡ **Performance Optimized** - Next.js 16+ with image optimization
 - 🎯 **Modern UI** - Clean, professional interface with Tailwind CSS
+
+## 🛠️ Tech Stack
+
+| Technology | Version | Purpose |
+|------------|---------|---------|
+| **Next.js** | 16.1.7 | React framework for production |
+| **React** | 19.2.3 | UI library |
+| **TypeScript** | ^5 | Type safety |
+| **Tailwind CSS** | ^4 | Utility-first CSS framework |
+| **Lucide React** | ^0.577.0 | Icon library |
+| **next-themes** | ^0.4.6 | Theme management |
 
 ## Prerequisites
 
