@@ -5,8 +5,10 @@ import Buttons from '../ui/Butons'
 import { formValidation } from '../../lib/FormValidations'
 import TextCop from '../ui/TextCop'
 import { MapPin, Phone, Mail } from 'lucide-react'
+import { useNotification } from '../../providers/NotificationProvider'
 
 export default function Contact() {
+  const { showSuccess, showError } = useNotification()
   const [values, setValues] = useState({
     name: '',
     email: '',
@@ -77,10 +79,10 @@ export default function Contact() {
 
     if (validateForm()) {
       console.log('Form submitted:', values)
-      alert('Form submitted successfully!')
+      showSuccess('Success!', 'Your message has been sent successfully!')
       resetForm()
     } else {
-      alert('Please fix the errors in the form')
+      showError('Validation Error', 'Please fix the errors in the form')
     }
   }
 

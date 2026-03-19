@@ -8,7 +8,7 @@ type TextCopProps = {
 
 const VARIANT_CLASSES = {
     primary: 'text-yellow-500 dark:text-yellow-400',
-    secondary: 'text-gray-600 dark:text-gray-400',
+    secondary: 'text-gray-500 dark:text-gray-400',
     ternary: 'text-slate-400 dark:text-gray-600'
 };
 

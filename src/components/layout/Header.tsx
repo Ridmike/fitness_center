@@ -8,21 +8,23 @@ import ThemeToggle from '../ui/ThemeToggle'
 
 export default function Header() {
   return (
-    <div className='bg-white dark:bg-black w-full h-16 flex items-center justify-between px-8 shadow-md'>
+    <div className="sticky top-0 left-0 z-50 w-full h-18 flex items-center justify-between px-8 bg-white/30 dark:bg-black/30 backdrop-blur-md border-b border-white/20 shadow-sm">
        <div className='flex justify-center items-center gap-1 md:gap-2'>
         <img src="/logo.jpg" alt="Logo" className='w-12 h-10' />
-        <NavText text="Fitness" variant="primary" to="#Hero" /><NavText text="Center" variant="secondary" to="#Hero" />
+        <a href='#Hero'>
+          <span className='font-bold text-yellow-500 text-xl'>Fitness</span><span className='font-bold text-xl'>Center</span>
+        </a>
+        
        </div> 
-       <div className='flex gap-4 md:gap-10'>
+       <div className='flex gap-4 md:gap-16'>
         <NavText text="About" variant="primary" to="#About" />
         <NavText text="Services" variant="primary" to="#Services" />
-        <NavText text="Trainers" variant="primary" to="#Trainers" />
         <NavText text="Contact" variant="primary" to="#Contact" />
        </div> 
        
-       <div className='flex items-center gap-3'>
+       <div className='flex items-center gap-6'>
         <ThemeToggle />
-        <Buttons title="Join Now" variant="primary" onClick={() => alert("Button Pressed")} />
+        <Buttons title={<NavText to='#Contact' text="Join Now" variant="ternary" />}variant="primary" />
        </div> 
     </div>
   )

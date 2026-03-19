@@ -1,7 +1,7 @@
 'use client'
 
 type ButtonsProps = {
-  title: string;
+  title: string | React.ReactNode;
   onClick?: () => void;
   variant?: 'primary' | 'secondary';
   loading?: boolean;
