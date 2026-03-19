@@ -3,6 +3,7 @@
 import About from "../components/layout/About";
 import Header from "../components/layout/Header";
 import Hero from "../components/layout/Hero";
+import Services from "../components/layout/Services";
 import Buttons from "../components/ui/Butons";
 import Image from "next/image";
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Header/>
       <Hero/>
       <About/>
+      <Services/>
       <main className="flex min-h-screen w-full max-w-  3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
