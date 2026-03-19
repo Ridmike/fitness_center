@@ -1,6 +1,7 @@
 'use client'
 
 import About from "../components/layout/About";
+import Contact from "../components/layout/Contact";
 import Header from "../components/layout/Header";
 import Hero from "../components/layout/Hero";
 import Services from "../components/layout/Services";
@@ -14,6 +15,7 @@ export default function Home() {
       <Hero/>
       <About/>
       <Services/>
+      <Contact/>
       <main className="flex min-h-screen w-full max-w-  3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
         
         <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
@@ -32,8 +34,6 @@ export default function Home() {
             />
             Deploy Now
           </a>
-          
-          <Buttons title="Get Started" variant="primary" onClick={() => alert("Button Pressed")} />
         </div>
       </main>
     </div>
