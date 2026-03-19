@@ -1,7 +1,10 @@
+'use client'
+
 import React from 'react'
 import Buttons from '../ui/Butons'
 import TextCop from '../ui/TextCop'
 import NavText from '../ui/NavText'
+import ThemeToggle from '../ui/ThemeToggle'
 
 export default function Header() {
   return (
@@ -17,7 +20,8 @@ export default function Header() {
         <NavText text="Contact" variant="primary" to="#Contact" />
        </div> 
        
-       <div>
+       <div className='flex items-center gap-3'>
+        <ThemeToggle />
         <Buttons title="Join Now" variant="primary" onClick={() => alert("Button Pressed")} />
        </div> 
     </div>

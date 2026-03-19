@@ -94,7 +94,7 @@ export default function Contact() {
             <TextCop text="TOUCH" variant="primary" className='text-3xl md:text-5xl font-bold' />
           </div>
           
-          <p className='text-gray-300 mb-6 max-w-sm'>Have questions about our memberships or programs? We're here to help you start your transformation.</p>
+          <p className='dark:text-gray-300 text-gray-500 mb-6 max-w-sm'>Have questions about our memberships or programs? We're here to help you start your transformation.</p>
 
           <div className='space-y-8'>
             
@@ -103,9 +103,9 @@ export default function Contact() {
                 <MapPin className='text-yellow-500' size={24} />
               </div>
               <div>
-                <h4 className='text-white font-semibold mb-2'>Location</h4>
-                <p className='text-gray-400 text-sm'>171/1, Sathsara Mawatha,</p>
-                <p className='text-gray-400 text-sm'>Malabe, 10115</p>
+                <h4 className='dark:text-white font-semibold mb-2'>Location</h4>
+                <p className='dark:text-gray-300 text-gray-500 text-sm'>171/1, Sathsara Mawatha,</p>
+                <p className='dark:text-gray-300 text-gray-500 text-sm'>Malabe, 10115</p>
               </div>
             </div>
 
@@ -114,8 +114,8 @@ export default function Contact() {
                 <Phone className='text-yellow-500' size={24} />
               </div>
               <div>
-                <h4 className='text-white font-semibold mb-2'>Phone</h4>
-                <p className='text-gray-400 text-sm'>+94 76 636 8845</p>
+                <h4 className='dark:text-white font-semibold mb-2'>Phone</h4>
+                <p className='dark:text-gray-300 text-gray-500 text-sm'>+94 76 636 8845</p>
               </div>
             </div>
 
@@ -124,8 +124,8 @@ export default function Contact() {
                 <Mail className='text-yellow-500' size={24} />
               </div>
               <div>
-                <h4 className='text-white font-semibold mb-2'>Email</h4>
-                <p className='text-gray-400 text-sm'>ridmikew@gmail.com</p>
+                <h4 className='dark:text-white font-semibold mb-2'>Email</h4>
+                <p className='dark:text-gray-300 text-gray-500 text-sm'>ridmikew@gmail.com</p>
               </div>
             </div>
           </div>

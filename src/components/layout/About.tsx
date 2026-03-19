@@ -18,15 +18,15 @@ export default function About() {
             </div>
         </div>
         <div className='w-1/2'>
-            <TextCop text="ABOUT US" variant="secondary" className='text-sm md:text-base font-semibold mb-2' />
-            <TextCop text="Elevating Human Performance Every Day" variant="ternary" className='text-2xl md:text-5xl font-bold text-white mb-4' />
+            <TextCop text="ABOUT US" variant="secondary" className='text-sm md:text-xl font-semibold mb-2' />
+            <TextCop text="Elevating Human Performance Every Day" variant="ternary" className='text-2xl md:text-4xl font-bold mb-4' />
             <TextCop text="At Transform Fitness, we provide a high-energy environment equipped with state-of-the-art technology to help you reach your peak performance. Our philosophy centers on functional movement, science-based training and an unwavering commitment to our members' results." variant="secondary" className='text-base md:text-lg font-medium text-gray-300 mb-4' />
             
             <div className='space-y-2 '>
               {features.map((feature, index) => (
                 <div key={index} className='flex items-center gap-3'>
                   <span className='text-yellow-500 text-xl'>✓</span>
-                  <p className='text-gray-200 font-medium'>{feature}</p>
+                  <p className='text-gray-600 font-medium'>{feature}</p>
                 </div>
               ))}
             </div>
