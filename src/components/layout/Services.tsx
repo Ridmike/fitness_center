@@ -27,7 +27,7 @@ export default function Services() {
     ]
 
   return (
-    <div className='container mx-auto py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8' id="Services">
+    <div className='container mx-auto py-12 sm:py-16 md:py-20 px-4 ' id="Services">
         <div className='flex flex-col sm:flex-row gap-2 justify-center mb-2 sm:mb-3'>
             <TextCop text="PREMIUM" variant="primary" className='text-2xl sm:text-3xl md:text-5xl font-bold text-center' />
             <TextCop text="SERVICES" variant="secondary" className='text-2xl sm:text-3xl md:text-5xl font-bold text-center' />
