@@ -37,7 +37,7 @@ export default function Services() {
             {services.map((service, index) => (
                 <div key={index} className='relative group overflow-hidden rounded-lg sm:rounded-xl h-48 sm:h-56 md:h-64'>
                     <img src={service.image} alt={service.title} className='w-full h-full object-cover rounded-lg sm:rounded-xl group-hover:scale-110 transition-transform duration-300' />
-                    <div className='absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-lg sm:rounded-xl'></div>
+                    <div className='absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent rounded-lg sm:rounded-xl'></div>
                     
                     <div className='absolute bottom-0 left-0 right-0 p-4 sm:p-5'>
                         <div className='flex items-center justify-center gap-2 sm:gap-3'>

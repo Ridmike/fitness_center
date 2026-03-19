@@ -1,8 +1,10 @@
 import React from 'react'
 import { Phone, Mail, MapPin, Facebook, Instagram, Twitter, Linkedin } from 'lucide-react'
+import { useNotification } from '@/src/providers/NotificationProvider'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
+  const { showWarning } = useNotification()
 
   return (
     <footer className="bg-gray-200 dark:bg-black dark:text-white w-full">
@@ -149,18 +151,18 @@ export default function Footer() {
         <div className="container mx-auto flex flex-col sm:flex-row justify-between gap-4 text-xs sm:text-sm text-gray-400">
           <p>&copy; {currentYear} Fitness Center. All rights reserved.</p>
           <div className="flex flex-wrap gap-4 sm:gap-6 justify-center ">
-            <a href="#Hero" className="hover:text-yellow-500 transition-colors">
+            <a href="#" onClick={() => showWarning('Warning!', 'This section is still under development!')} className="hover:text-yellow-500 transition-colors">
               Privacy Policy
             </a>
-            <a href="#" className="hover:text-yellow-500 transition-colors">
+            <a href="#"  onClick={() => showWarning('Warning!', 'This section is still under development!')} className="hover:text-yellow-500 transition-colors">
               Terms of Service
             </a>
-            <a href="#" className="hover:text-yellow-500 transition-colors">
+            <a href="#" onClick={() => showWarning('Warning!', 'This section is still under development!')} className="hover:text-yellow-500 transition-colors">
               Cookie Policy
             </a>
           </div>
           <div>
-            <p>Developed & Design By <span><a href="#" className="hover:text-yellow-500 transition-colors">Shakil Ridmika</a></span></p>
+            <p>Developed & Design By <span><a href="https://www.linkedin.com/in/shakil-ridmike/" className="hover:text-yellow-500 transition-colors">Shakil Ridmika</a></span></p>
           </div>
         </div>
       </div>
