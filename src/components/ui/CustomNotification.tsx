@@ -59,14 +59,14 @@ const CustomNotification: React.FC<CustomNotificationProps> = ({
     <div
       className={`${config.bgColor} ${config.borderColor} border rounded-lg p-4 flex gap-3 items-start shadow-lg animate-in fade-in slide-in-from-top-2 duration-300`}
     >
-      <div className="flex-shrink-0">{config.icon}</div>
+      <div className="shrink-0">{config.icon}</div>
       <div className="flex-1">
         <h3 className={`font-semibold text-sm ${config.titleColor}`}>{title}</h3>
         <p className={`text-sm mt-1 ${config.messageColor}`}>{message}</p>
       </div>
       <button
         onClick={() => onClose(id)}
-        className="flex-shrink-0 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
+        className="shrink-0 text-gray-400 hover:text-gray-600 dark:hover:text-gray-300 transition-colors"
       >
         <X className="w-4 h-4" />
       </button>

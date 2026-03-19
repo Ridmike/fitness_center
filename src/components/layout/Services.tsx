@@ -27,22 +27,22 @@ export default function Services() {
     ]
 
   return (
-    <div className='py-16 px-4' id="Services">
-        <div className='flex gap-2 justify-center mb-2'>
-            <TextCop text="PREMIUM" variant="primary" className='text-3xl md:text-5xl font-bold text-center' />
-            <TextCop text="SERVICES" variant="secondary" className='text-3xl md:text-5xl font-bold text-center' />
+    <div className='container mx-auto py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-8' id="Services">
+        <div className='flex flex-col sm:flex-row gap-2 justify-center mb-2 sm:mb-3'>
+            <TextCop text="PREMIUM" variant="primary" className='text-2xl sm:text-3xl md:text-5xl font-bold text-center' />
+            <TextCop text="SERVICES" variant="secondary" className='text-2xl sm:text-3xl md:text-5xl font-bold text-center' />
         </div>
-        <TextCop text="Tailored programs designed to challenge your limits and deliver measurable results" variant="secondary" className='text-base md:text-lg font-medium text-center text-gray-300 mb-12' />
-        <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 py-10 px-4'>
+        <TextCop text="Tailored programs designed to challenge your limits and deliver measurable results" variant="secondary" className='text-xs sm:text-base md:text-lg font-medium text-center text-gray-300 mb-8 sm:mb-10 md:mb-12' />
+        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-5 md:gap-6'>
             {services.map((service, index) => (
-                <div key={index} className='relative group overflow-hidden rounded-xl'>
-                    <img src={service.image} alt={service.title} className='w-full h-full object-cover rounded-xl group-hover:scale-105 transition-transform duration-300' />
-                    <div className='absolute inset-0 bg-linear-to-t from-black/80 to-transparent rounded-xl'></div>
+                <div key={index} className='relative group overflow-hidden rounded-lg sm:rounded-xl h-48 sm:h-56 md:h-64'>
+                    <img src={service.image} alt={service.title} className='w-full h-full object-cover rounded-lg sm:rounded-xl group-hover:scale-110 transition-transform duration-300' />
+                    <div className='absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent rounded-lg sm:rounded-xl'></div>
                     
-                    <div className='absolute bottom-0 left-0 right-0 p-4'>
-                        <div className='flex items-center justify-center gap-3'>
-                            <span className='text-2xl'>{service.icon}</span>
-                            <p className='text-lg font-semibold text-white'>
+                    <div className='absolute bottom-0 left-0 right-0 p-4 sm:p-5'>
+                        <div className='flex items-center justify-center gap-2 sm:gap-3'>
+                            <span className='text-xl sm:text-2xl'>{service.icon}</span>
+                            <p className='text-sm sm:text-base md:text-lg font-semibold text-white line-clamp-2'>
                                 {service.title}
                             </p>
                         </div>

@@ -87,47 +87,51 @@ export default function Contact() {
   }
 
   return (
-    <div className='py-4 px-4 md:px-8' id="Contact">
-      <div className='max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12'>
+    <div className='py-8 sm:py-12 md:py-16 px-4 sm:px-6 md:px-8' id="Contact">
+      <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12'>
         {/* Contact Info */}
         <div className='flex flex-col justify-start'>
-          <div className='flex items-center gap-2 mb-4'>
-            <TextCop text="GET IN" variant="secondary" className='text-3xl md:text-5xl font-bold' />
-            <TextCop text="TOUCH" variant="primary" className='text-3xl md:text-5xl font-bold' />
+          <div className='flex flex-col sm:flex-row items-start sm:items-center gap-1 sm:gap-2 mb-4 sm:mb-6'>
+            <TextCop text="GET IN" variant="secondary" className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold' />
+            <TextCop text="TOUCH" variant="primary" className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold' />
           </div>
           
-          <p className='dark:text-gray-300 text-gray-500 mb-6 max-w-sm'>Have questions about our memberships or programs? We're here to help you start your transformation.</p>
+          <p className='dark:text-gray-300 text-gray-500 mb-6 sm:mb-8 max-w-sm text-sm sm:text-base'>Have questions about our memberships or programs? We're here to help you start your transformation.</p>
 
-          <div className='space-y-8'>
+          <div className='space-y-6 sm:space-y-8'>
             
-            <div className='flex gap-4 items-start'>
-              <div className='bg-yellow-600/20 border border-yellow-600/30 rounded-lg p-3 mt-1'>
-                <MapPin className='text-yellow-500' size={24} />
+            <div className='flex gap-3 sm:gap-4 items-start'>
+              <div className='bg-yellow-600/20 border border-yellow-600/30 rounded-lg p-2 sm:p-3 mt-1 shrink-0'>
+                <MapPin className='text-yellow-500' size={20}  />
               </div>
-              <div>
-                <h4 className='dark:text-white font-semibold mb-2'>Location</h4>
-                <p className='dark:text-gray-300 text-gray-500 text-sm'>171/1, Sathsara Mawatha,</p>
-                <p className='dark:text-gray-300 text-gray-500 text-sm'>Malabe, 10115</p>
-              </div>
-            </div>
-
-            <div className='flex gap-4 items-start'>
-              <div className='bg-yellow-600/20 border border-yellow-600/30 rounded-lg p-3 mt-1'>
-                <Phone className='text-yellow-500' size={24} />
-              </div>
-              <div>
-                <h4 className='dark:text-white font-semibold mb-2'>Phone</h4>
-                <p className='dark:text-gray-300 text-gray-500 text-sm'>+94 76 636 8845</p>
+              <div className='min-w-0'>
+                <h4 className='dark:text-white font-semibold mb-1 sm:mb-2 text-sm sm:text-base'>Location</h4>
+                <p className='dark:text-gray-300 text-gray-500 text-xs sm:text-sm'>171/1, Sathsara Mawatha,</p>
+                <p className='dark:text-gray-300 text-gray-500 text-xs sm:text-sm'>Malabe, 10115</p>
               </div>
             </div>
 
-            <div className='flex gap-4 items-start'>
-              <div className='bg-yellow-600/20 border border-yellow-600/30 rounded-lg p-3 mt-1'>
-                <Mail className='text-yellow-500' size={24} />
+            <div className='flex gap-3 sm:gap-4 items-start'>
+              <div className='bg-yellow-600/20 border border-yellow-600/30 rounded-lg p-2 sm:p-3 mt-1 shrink-0'>
+                <Phone className='text-yellow-500' size={20}  />
               </div>
               <div>
-                <h4 className='dark:text-white font-semibold mb-2'>Email</h4>
-                <p className='dark:text-gray-300 text-gray-500 text-sm'>ridmikew@gmail.com</p>
+                <h4 className='dark:text-white font-semibold mb-1 sm:mb-2 text-sm sm:text-base'>Phone</h4>
+                <a href="tel:+94766368845" className='dark:text-gray-300 text-gray-500 text-xs sm:text-sm hover:text-yellow-500 transition-colors'>
+                  +94 76 636 8845
+                </a>
+              </div>
+            </div>
+
+            <div className='flex gap-3 sm:gap-4 items-start'>
+              <div className='bg-yellow-600/20 border border-yellow-600/30 rounded-lg p-2 sm:p-3 mt-1 shrink-0'>
+                <Mail className='text-yellow-500' size={20}  />
+              </div>
+              <div>
+                <h4 className='dark:text-white font-semibold mb-1 sm:mb-2 text-sm sm:text-base'>Email</h4>
+                <a href="mailto:ridmikew@gmail.com" className='dark:text-gray-300 text-gray-500 text-xs sm:text-sm hover:text-yellow-500 transition-colors'>
+                  ridmikew@gmail.com
+                </a>
               </div>
             </div>
           </div>
@@ -135,8 +139,8 @@ export default function Contact() {
 
         {/* Form */}
         <div>
-          <form onSubmit={handleSubmit} className='space-y-6'>
-            <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
+          <form onSubmit={handleSubmit} className='space-y-5 sm:space-y-6'>
+            <div className='grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6'>
               <FormInput
                 label="NAME"
                 name="name"
@@ -184,19 +188,19 @@ export default function Contact() {
               variant="primary"
             />
 
-            <div className='flex w-full gap-4 pt-4'>
+            <div className='flex flex-col sm:flex-row w-full gap-3 sm:gap-4 pt-2 sm:pt-4'>
               <Buttons
                 title="Send Message"
                 variant="primary"
                 type="submit"
-                className='w-1/2'
+                className='w-full sm:w-1/2'
               />
               <Buttons
                 title="Reset"
                 variant="secondary"
                 type="button"
                 onClick={resetForm}
-                className='w-1/2'
+                className='w-full sm:w-1/2'
               />
             </div>
           </form>
